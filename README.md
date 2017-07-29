@@ -14,7 +14,7 @@ so here comes a **ip**-lock-helper
 
 Change DEVICE_IP to your cellphone's or anythings you'll leave with
 
-run `pythonw lock.py` when windows start
+run `pythonw locker.py` when windows start
 
 # Feature
 * support multiple IPs
