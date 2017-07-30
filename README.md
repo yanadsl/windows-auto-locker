@@ -20,3 +20,7 @@ run `pythonw locker.py` when windows start and just leave it alone
 * check every 15s (you can change by yourself)
 * Define idling by checking last input time (60s default) (you can set the threshold yourself)
 
+# How does it work?
+By calling `ctype.windll.user32.GetLastInputInfo` to check if user's idling time > `IDLE_TIME`
+
+ping the whole `DEVICE_IP` list, lock the computer `ctype.windll.user32.LockWorkStation()` when every IP is unreachable
